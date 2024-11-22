@@ -9,13 +9,15 @@ Custom post feeds that can be used in the Bluesky micro-blogging platform. Fork 
 ## Quick Start Guide
 + To add a feed to Bluesky, simply click on one of the feed links below and either pin it or subscribe to it.
 + To further customize a feed, or to build your own based on these custom feeds, open the apropriate JSON file and copy & paste into [Skyfeed.app](https://skyfeed.app).
+  
 
 
-### Available Feeds
-#### #umichresearch
+## Available Feeds
+### #umichresearch
+<img src="images/umichresearch.png" alt="#umichresearch feed logo" title="#umichresearch feed" style="width: 120px;" width="120px" /><br />
 Highlights from research, publications, discoveries and innovations at University of Michigan.
 + View this feed: https://bsky.app/profile/gabriel.mongefranco.com/feed/aaacxlaaujdck
-+ View the code: /umichresearch.json
++ View the code: [umichresearch.json](umichresearch.json)
 
 
 ## Documentation
