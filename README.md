@@ -23,8 +23,30 @@ Highlights from research, publications, discoveries and innovations at Universit
 ## Documentation
 
 ### #umichresearch
+1. Get all feeds (firehose) from the past 12 hours
+2. Remove replies, leaving only posts and re-posts (to speed up filters that follow)
+3. Remove re-posts, now leaving only posts (to speed up filters that follow)
+4. Filter using regular expressions (regex), searching the post text, images alt text, and links
+5. + Match pattern "umich research", "umich center", etc.
+     + Match the beginning of any word, or words starting with # or @
+     + Then match umich, mich med, etc.
+     + Then optionally match end of the word or apostrophe s ('s)
+     + Then match health, center, institute, research, etc.
+     + Then match optional endings in ing, ed, etc.
+     + Then match the end of the word (word boundary)
+   + OR match links to any sub-domains of umich.edu, umflint.edu or umdearborn.edu (the parent domains are excluded to avoid getting unrelated university announcements)
+   + OR match links to specific domains that also contain research articles (e.g. michiganmedicine.org, myuofmhealth.org, depressioncenter.org)
+6. Limit to 200 results (since this could potentially return thousands of posts)
+7. Add posts from a custom [#umich-researchers](https://bsky.app/profile/gabriel.mongefranco.com/lists/3lawd6ilzuv2q) list, from the last 7 days. Since researchers are busy teaching and doing research, pulling longer history makes sense.
+8. Remove replies, to ensure only posts and re-posts from investigators in the previous list are used in the feed. Comments in replies potentially add too much unrelated information
+9. Add posts using any of the following tags: #umichresearch, #umichresearchers, #umich-researchers, #umichscience, #umdepressioncenter, #umichdepressioncenter, #umichmetric, #ummetricsymposium, #umichmetricsymposium, #metricsymposium, #umichisr, #d3center, #umichd3c, #umichpsc
+10. Now try to narrow posts by filtering using regular expressions for research-related keywords, or keywords that researchers are likely to use when referring to studies and research-related events
+11. Then remove potentially offensive or off-topic (non-research) posts with an inverse regular expresison filter
+12. Remove offensive, sexually charged, hate charged, misleading, or spam posts using the Bluesky Moderation Service
+13. Remove duplicates
+14. Finally, sort by creation date to display newest posts first
 
-
+  
 
 ## Additional Resources
 + Bluesky micro-blogging platform: https://bsky.app
