@@ -14,14 +14,8 @@
             "id": "aaaefunkkukj4"
         },
         {
-            "type": "remove",
-            "subject": "item",
-            "value": "repost",
-            "id": "aaafjfladdzx6"
-        },
-        {
             "type": "regex",
-            "value": "(\\b|\\#|\\@)+(umich|u-m|university of michigan|universidad de michigan|michigan medicine|michigan health|michiganmedicine|umhealth|uofmhealth|uofm|u of m|michigandifference)+(\\W|\\'s )?(health|medicine|medical|center|centro|research|investigacion|institute|instituto|eisenberg|depression center|depressioncenter|efdc|isr|lsa|psc|medicine|health|office of|study|studies|estudio|investigator|PI|code|open source|viz|visualization|fellow|peer|lab|grant|award|faculty|professor|collaboration|collabor|partnership|fellow|postdoc|post-doc|rogel|eisenberg|cancer|heart|lung|diabetes|mend|clinic|circadian|sleep)?(\\'s|s|er|ers|es|ing|ando|endo|ndo|ed|do|da)?(\\b)+|\\.umich\\.edu|depressioncenter\\.org|michiganmedicine\\.org|uofmhealth\\.org|\\.umflint\\.edu|\\.umdearborn\\.edu|uofmhealthwest\\.org|uofmhealthsparrow\\.org|umcvc\\.org|mottchildren\\.org",
+            "value": "(\\b|\\#|\\@)+(umich|u-m|university of michigan|universidad de michigan|michigan medicine|michigan health|michiganmedicine|umhealth|uofmhealth|uofm|u of m|michigandifference|michigan)+(\\W|\\'s )?(health|medicine|medical|center|centro|research|investigacion|institute|instituto|eisenberg|depression center|depressioncenter|efdc|isr|lsa|psc|medicine|health|office of|study|studies|estudio|investigator|PI|code|open source|viz|visualization|fellow|peer|lab|grant|award|faculty|professor|collaboration|collabor|partnership|fellow|postdoc|post-doc|rogel|eisenberg|cancer|heart|lung|diabetes|mend|clinic|circadian|sleep|usu|university staff united|student union|union|research palooza)?(\\'s|s|er|ers|es|ing|ando|endo|ndo|ed|do|da)?(\\b)+|\\.umich\\.edu|depressioncenter\\.org|michiganmedicine\\.org|uofmhealth\\.org|\\.umflint\\.edu|\\.umdearborn\\.edu|uofmhealthwest\\.org|uofmhealthsparrow\\.org|umcvc\\.org|mottchildren\\.org",
             "caseSensitive": false,
             "id": "aaaefmrirqpto",
             "invert": false,
@@ -29,21 +23,8 @@
         },
         {
             "type": "limit",
-            "count": 200,
+            "count": 2000,
             "id": "aaaefobgu54ky"
-        },
-        {
-            "type": "input",
-            "inputType": "list",
-            "id": "aaaczwl43onuw",
-            "listUri": "at://did:plc:4nugyqaftz7qe7rtau7dvggo/app.bsky.graph.list/3lawd6ilzuv2q",
-            "historySeconds": 604800
-        },
-        {
-            "type": "remove",
-            "subject": "item",
-            "value": "reply",
-            "id": "aaaefmb6rtfyi"
         },
         {
             "type": "input",
@@ -52,32 +33,50 @@
             "historySeconds": 604800,
             "tags": [
                 "umichresearch",
+                "UMichResearch",
+                "UmichResearch",
+                "UMICHRESEARCH",
+                "umich-research",
+                "UMich-Research",
+                "Umich-Research",
+                "UMICH-RESEARCH",
                 "umichresearchers",
+                "UMichResearchers",
+                "UmichResearchers",
                 "umich-researchers",
+                "UMich-Researchers",
+                "Umich-Researchers",
                 "umichscience",
                 "umdepressioncenter",
+                "UMDepressionCenter",
                 "umichdepressioncenter",
+                "UMichDepressionCenter",
+                "UmichDepressionCenter",
                 "umichmetric",
+                "UmichMetric",
+                "UmichMeTric",
+                "UMichMeTric",
+                "UMichMETRIC",
+                "Umichmetric",
+                "UMichmetric",
                 "ummetricsymposium",
                 "umichmetricsymposium",
-                "metricsymposium",
-                "umichisr",
-                "d3center",
-                "umichd3c",
-                "umichpsc"
+                "MetricSymposium",
+                "MeTRICSymposium",
+                "metricsymposium"
             ]
         },
         {
             "type": "regex",
-            "value": "(\\b|\\#|\\@)+(research|study|published|publication|paper|study|investigate|discover|a grant|new grant|nih|researcher|investigation|efdc|mobiletech|wearable|repository|github|results|findings|conference|symposium|collabor|co\\-investigator|co-author|mobile tech|lab|postdoc|research center|center for|institute|participant|curated|publication|journal|investig|analysis|healthcare policy|health research|healthcare study|healthcare research|science|scientific|engineering|museum|library|librarian|curator|new fund|fund |funded|funding|pubmed|collection|researching|professor|faculty|school of|division of|cohort|study coord|future of|care policy|github|gitlab|umich center|umich research|umichresearch|depressioncenter|eisenberg family depression center|mental illness|mental health|michigan research|michigan institute|depression center|metric|MDEN|mobiletech|mobile tech|wearable|u-m health|michigan medicine|michiganmedicine|michigan health|u-m center|u-m health|u-m institute|um institute|survey research|a study|my study|our study|nuevo estudio|new study|mi estudio|nuestro estudio|universidad de michigan|investigaci|research|isr|social research|health policy|group dynamics|population stud|populations stud|cohort|participant|research coord|research lab|award|umichpath|umich cse|umich lsa|umichlsa|mott children|mottchildren|umich mend|um mend|u-m mend|umich diabetes|um-psc|um-isr|fordschool|lsa|umdearborn|umflint|um-dearborn|um-flint|u-m dearborn|u-m flint|umich dearborn|umich flint|journal of|science journal|medical journal|psychiatry journal|health journal|lab member|lab director|lab manager|program|mhealth|m\\-health|digitalhealth|digital health|social research|population research|I scored|my grade|quiz|exam week|exams week|geeky|fantasy|fiction course|journalism class|law class|summer program|fall program|spring program|winter program|scholarship|academia|highered|higher education|T32|scholar|bioinformatic|nanotech|nanotechnology|nanotechnologies|biometric|biomarker|artificial intelligence|genai|machine learning|mlmodel|ml model|ai model|fellowship|associate professor|professorship|open source|rogel cancer center|circadian|device validation|validation study|diabetes study|diabetes research)+(\\W|\\'s )?(\\'s|s|er|ers|es|ing|ando|endo|ndo|ed|do|da)?(\\b)+",
+            "value": "(\\b|\\#|\\@)+(research|study|published|publication|paper|study|investigate|discover|a grant|new grant|nih|researcher|investigation|efdc|mobiletech|wearable|repository|github|results|findings|conference|symposium|collabor|co\\-investigator|co-author|mobile tech|lab|postdoc|research center|center for|institute|participant|curated|publication|journal|investig|analysis|healthcare policy|health research|healthcare study|healthcare research|science|scientific|engineering|museum|library|librarian|curator|new fund|fund |funded|funding|pubmed|collection|researching|professor|faculty|school of|division of|cohort|study coord|future of|care policy|github|gitlab|umich center|umich research|umichresearch|depressioncenter|eisenberg family depression center|mental illness|mental health|michigan research|michigan institute|depression center|metric|MDEN|mobiletech|mobile tech|wearable|u-m health|michigan medicine|michiganmedicine|michigan health|u-m center|u-m health|u-m institute|um institute|survey research|a study|my study|our study|nuevo estudio|new study|mi estudio|nuestro estudio|universidad de michigan|investigaci|research|isr|social research|health policy|group dynamics|population stud|populations stud|cohort|participant|research coord|research lab|award|umichpath|umich cse|umich lsa|umichlsa|mott children|mottchildren|umich mend|um mend|u-m mend|umich diabetes|um-psc|um-isr|fordschool|lsa|umdearborn|umflint|um-dearborn|um-flint|u-m dearborn|u-m flint|umich dearborn|umich flint|journal of|science journal|medical journal|psychiatry journal|health journal|lab member|lab director|lab manager|program|mhealth|m\\-health|digitalhealth|digital health|social research|population research|I scored|my grade|quiz|exam week|exams week|geeky|fantasy|fiction course|journalism class|law class|summer program|fall program|spring program|winter program|scholarship|academia|highered|higher education|T32|scholar|bioinformatic|nanotech|nanotechnology|nanotechnologies|biometric|biomarker|artificial intelligence|genai|machine learning|mlmodel|ml model|ai model|fellowship|associate professor|professorship|open source|rogel cancer center|circadian|device validation|validation study|diabetes study|diabetes research|doi.org)+(\\W|\\'s|s|er|ers|es|ing|ando|endo|ndo|ed|do|da)?(\\b)+",
             "caseSensitive": false,
             "id": "aaacxtrhchovk",
             "invert": false,
-            "target": "text|alt_text"
+            "target": "text"
         },
         {
             "type": "regex",
-            "value": "(\\b|\\#|\\@)+(freebie|trump|biden|harris|republicans|dems|democrats|liberals|libs|rightwing|right-wing|fuck|white house|congress|supreme court|shit|bullshit|wtf|dumb|election|constituent|constituency|introvertcrisis|troll|blocked|blocking|bloquear|bloquea|pareço|football|school spirit|not sorry|not-sorry|post-conf|ohio state|msu|michigan state|basketball|hockey|marching band|michigan athletics|manitoba|minnesota|university of maryland|university of manitoba|university of minnesota|canada|ohio state|michigan state|msu|football| game|basketball|hockey|canadian|the skyline|copenhag|toxic individual|toxic person|toxic group|toxic soup|banned|hospital association|rivalry|president-elect|secret service|bali |financial scam|legat um|tax revenue|legatum|crowdfunding|fund raise|yale quantum|atari|retrotech|cat|negotiate|negotiation|banded together|band together|unionize|my book|my new book|our new book|the union|big ten|effective leader|furrie|porn|pornography|journalist|journalism|lawsuit|legal battle)+(\\W|\\'s )?(\\'s|s|er|ers|es|ing|ando|endo|ndo|ed|do|da)?(\\b)+|(Future of )+(.)+(\\b)+(panel)+",
+            "value": "(\\b|\\#|\\@)+(freebie|trump|biden|harris|republicans|dems|democrats|liberals|libs|rightwing|left-wing|right-wing|fuck|fucking|f**k|white house|counsel|supreme court|shit|bullshit|wtf|dumb|election|constituent|constituency|introvertcrisis|troll|blocked|blocking|bloquear|bloquea|pareço|football|school spirit|not sorry|not-sorry|post-conf|ohio state|msu|michigan state|basketball|hockey|marching band|michigan athletics|manitoba|minnesota|university of maryland|university of manitoba|university of minnesota|canada|ohio state|michigan state|msu|football| game|basketball|hockey|canadian|the skyline|copenhag|toxic individual|toxic person|toxic group|toxic soup|banned|hospital association|rivalry|president-elect|secret service|bali |financial scam|legat um|tax revenue|legatum|crowdfunding|fund raise|yale quantum|atari|retrotech|cat|negotiate|negotiation|banded together|band together|my book|my new book|our new book|the union|big ten|effective leader|furrie|porn|pornography|journalist|journalism|lawsuit|legal battle|maybe you should|did you even|dumbass|business news|law news|legal news|sports news|athletics news|this administration|breaking news|news top|frat party|parting|under investigation|threat|threaten|michigan avenue|famous graduate|famous alumn|photography|landscapes|sculpture|film screening|movie screening|cash program|top-ranked|gymnastics|league|mbeducation|first term|second term|oligarch|delicious|oil study|oil studio|painting|paint studio|watercolor|exhibit)+(\\W|\\'s )?(\\'s|s|er|ers|es|ing|ando|endo|ndo|ed|do|da)?(\\b)+|(Future of )+(.)+(\\b)+(panel)+",
             "caseSensitive": false,
             "id": "aaacxv4pbjq46",
             "invert": true,
@@ -92,7 +91,6 @@
                 "did:plc:ar7c4by46qjdydhdevvrndac/nudity",
                 "did:plc:ar7c4by46qjdydhdevvrndac/porn",
                 "did:plc:ar7c4by46qjdydhdevvrndac/drugs",
-                "did:plc:ar7c4by46qjdydhdevvrndac/trump",
                 "did:plc:ar7c4by46qjdydhdevvrndac/piracy",
                 "did:plc:ar7c4by46qjdydhdevvrndac/Illicit",
                 "did:plc:ar7c4by46qjdydhdevvrndac/Adult Content",
